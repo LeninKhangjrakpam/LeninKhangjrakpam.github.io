@@ -1,0 +1,10 @@
+body{
+  background-image: linear-gradient(0deg, #c13765, #272770);
+  background-attachment: fixed;
+}
+
+
+nav.navbar{
+  background-color: black;
+  position: sticky;        
+}

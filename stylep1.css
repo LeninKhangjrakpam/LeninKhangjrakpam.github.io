@@ -1,0 +1,9 @@
+body
+{
+  background-color: black;
+  background-attachment: fixed;
+}
+nav.navbar{
+  background-color: rgb(31, 31, 31);
+  position: sticky;        
+}

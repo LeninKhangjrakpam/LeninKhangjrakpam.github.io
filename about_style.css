@@ -1,0 +1,141 @@
+body{
+    background-image: url("wall1.gif");
+}
+.card{
+  border-radius: 20px 0 20px 0;
+  border-top: 5px solid #00ff62;
+  border-bottom: 5px solid #00ff62;
+  background-color: wheat;
+  box-shadow: 0 0 8px 3px green;
+  transition: 2s;
+}
+.footer-about
+{
+    background-color: black;
+    padding: 30px 20px 60px;
+    color: white;
+}
+.card:hover{
+  box-shadow: 0 0 15px 5px darkred;
+  font-size: 1.1rem;!important
+}
+.btn{
+  margin: 3px;
+  transition: 2s;
+}
+.btn:hover, a:hover{
+  color: #8b6bd6;
+}
+.btn:hover{
+  background-color: black;
+  font-weight: bolder;
+}
+.icon-container{
+  text-align: center;
+}
+.int-link
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 30px;
+    background-color: grey;
+
+    font-weight: bold;
+    padding: 0 20px;
+}
+        
+.grid-profile{ grid-area: profile; }
+.grid-profession{ grid-area: profession; }
+.grid-links{ grid-area: links; }
+.grid-education{ grid-area: education; }
+.grid-summary{ grid-area: summary; }
+
+.about-grid-container{
+  display: grid;
+  grid-gap: 1rem;
+  margin: 3rem;
+
+  grid-template-areas: 
+    'profile profession education'
+    'summary summary education'
+    'summary summary education'
+    'summary summary links';
+}
+
+@keyframes right-grow {
+  0%  {
+    height: 0px;
+    right: -100%;
+    opacity: 0;
+    background-color: transparent;
+    overflow: hidden;
+    visibility: hidden;
+  }
+  50%  {
+    height: 50%;
+    background-color: transparent;
+    right: 50%;
+    opacity: 0.3;
+    overflow: hidden;
+  }
+  100%  {
+    height: 100%;
+    opacity: 1;
+    right: 0%;
+    overflow: hidden;
+    visibility: visible;
+  }
+}
+@keyframes left-grow {
+  0%  {
+    height: 0px;
+    left: -100%;
+    opacity: 0;
+    background-color: transparent;
+    overflow: hidden;
+    visibility: hidden;
+  }
+  50%  {
+    height: 50%;
+    background-color: transparent;
+    left: 50%;
+    opacity: 0.3;
+    overflow: hidden;
+  }
+  100%  {
+    height: 100%;
+    opacity: 1;
+    left: 0%;
+    overflow: hidden;
+    visibility: visible;
+  }
+}
+
+.grid-profession, .grid-education {
+  animation-name: right-grow;
+  position: relative;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+.grid-profile, .grid-links, .grid-summary {
+  animation-name: left-grow;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@media only screen and (max-width: 426px){
+  .about-grid-container{
+    display: grid;
+    margin: 1rem;
+    grid-gap: 0.7rem;
+    grid-template-areas:
+      'profile'
+      'education'
+      'profession'
+      'summary'
+      'links';
+  }
+}

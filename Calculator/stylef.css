@@ -1,0 +1,67 @@
+body{
+  background-color: whitesmoke;
+  background-position: no-repeat;
+  background-attachment: fixed;
+}
+.greeting{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(75, 0, 75);
+}
+.main{
+  border-left: 7px solid green;
+  background-color: rgb(204, 255, 189);
+  width: fit-content;
+  padding: 30px 10px;
+  position: relative;
+  font-size: 17px;
+  margin: 10% 4%;
+  text-align: justify;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.fd_link{
+  text-align: center;
+}
+.footer{
+  background-color: black;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: right;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+a{
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+}
+.back_button{
+  position: fixed;
+  left: 0;
+  top: 85%;
+  z-index: 1;
+  border: 1px solid black;
+  width: fit-content;
+  padding: 5px;
+  background-color: whitesmoke;
+  opacity: 0.8;
+}
+.btn_desgn
+{
+  border: 1px solid white;
+  width: fit-content;
+  margin: auto;
+  background-image: linear-gradient(red, purple);
+  font-size: 20px;
+  border-radius: 12px;
+  padding: 10px;
+}

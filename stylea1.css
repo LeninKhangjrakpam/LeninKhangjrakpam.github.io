@@ -1,0 +1,42 @@
+.web-header{
+  font-size: 20px;
+  color: green;
+  font-weight: bold;
+  background-color: #ffffff;
+  padding: 10px 0; 
+}
+a.navbar-brand img{
+  width: 60px;
+  height: 39px;
+  border-radius: 50%;
+}
+li{
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+nav.navbar{
+  background-color: black;
+  position: sticky;        
+}
+.navbar a.nav-link:hover{
+  background-color: rgb(44, 44, 44);
+}
+
+.dropdown-menu{
+  width: auto;
+  background-color: #242424;        
+}
+.dropdown-item{
+  color: #ffffff;
+}
+.dropdown-menu a:hover{
+  font-weight: bold;
+  background-color: #242424;  
+  color: green;
+}
+a{
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+}

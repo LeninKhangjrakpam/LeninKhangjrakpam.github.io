@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src = "script.js" type = "text/javascript"></script>
+  <link href = "style.css" rel = "stylesheet"/>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      document.querySelector('.time_format').innerHTML= Date();
+    });
+  </script>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Calculator</title>
+</head>
+  <!--
+
+
+
+
+
+
+
+
+
+
+    
+  Hey, hello there !!!
+  Thanks, for checking out my webpage.
+  If you love website like this, then you can find more of my webapp at  https://ip-tracker-lkh.herokuapp.com/ and much more to come.
+  Also, checkout my github, I have some amazing project there, Feel free to review and contribute to my repository
+  @https://github.com/LeninKhangjrakpam
+  If you'd like to hang out, I'm @https://twitter.com/Lenin_Khangjr on Twitter.
+  -Lenin Khangjrakpam
+
+
+
+
+
+
+
+
+
+
+
+  -->
+<body>
+  <div class="calct">
+    <div class="display">
+      <span class="display-value"></span><span class = "cursor">|</span>
+      <hr><div class="rad_to_deg"></div>
+    </div>
+    <div class = "res"></div>
+    <div class="status" style="position: absolute; width: 2rem; text-align: center; right: 0;"><div class="spinner-border" role="status" style="width: 1rem; height: 1rem; font-size: 0.7rem;"><span class="visually-hidden">Loading...</span></div> </div>
+    <div class="keypad">
+      <div class="basic-key">
+        <button class = 'clr' name = "special_key">RESET</button> <button class="del" name = "special_key"><i class="bi bi-backspace-fill"></i></button> <button id = "ans" name = "special_key">=</button><br>
+        <button value="7" name="constant_symbol">7</button><button value="8" name="constant_symbol">8</button><button value="9" name="constant_symbol">9</button><button value="/" name="constant_symbol">&#247;</button><br>
+        <button value="4" name="constant_symbol">4</button><button value="5" name="constant_symbol">5</button><button value="6" name="constant_symbol">6</button><button value="*" name="constant_symbol">&#215;</button><br>
+        <button value="1" name="constant_symbol">1</button><button value="2" name="constant_symbol">2</button><button value="3" name="constant_symbol">3</button><button value="-" name="constant_symbol">-</button><br>
+        <button value="0" name="constant_symbol">0</button><button value="." name="constant_symbol">.</button><button value="%" name="constant_symbol">mod</button><button value="+" name="constant_symbol">+</button><br>
+      </div>
+      <div class="operator-key">
+        <button value="(" name="constant_symbol">(</button><button value="left_shift" name="constant_symbol">&lt;&lt;</button><button value="right_shift" name="constant_symbol">&gt;&gt;</button><button class="mode" id="mode_rand" value = "mode" name = "special_key">&#1421;</button><br>
+        <button value=")"  name="constant_symbol">)</button><button value="log" name="constant_symbol">log</button><button value="sin" name="constant_symbol">sin</button><button value="sin_i" name="constant_symbol">sin<sup>-1</sup></button><br>
+        <button value="exponent" name = "constant_symbol">x<sup>y</sup></button><button value="log2" name="constant_symbol">log<sub>2</sub></button><button value="cos" name="constant_symbol">cos</button><button value="cos_i" name="constant_symbol">cos<sup>-1</sup></button><br>
+        <button value="," name="constant_symbol">,</button><button value="log10" name="constant_symbol">log<sub>10</sub></button><button value="tan" name="constant_symbol">tan</button><button value="tan_i" name="constant_symbol">tan<sup>-1</sup></button><br>
+        <button value= "squareroot" name = "constant_symbol">&radic;</button><button value ="pi" name="constant_symbol">&pi;</button><button value= "E" name="constant_symbol">e</button><a href="calc_help.html"><button name="special_key">Help</button></a><br>
+      </div>
+    </div>
+  </div>
+  <div class="feedback"><a href="feedback.html">Feedback</a></div>
+  <div class="footer">Version: 1.0.0
+    <div><a href="../index.html">Home</a> | <a href="../about.html">About</a> | <a href="calc_help.html">Help</a><br><a href="https://github.com/LeninKhangjrakpam">Github <i class="bi bi-github"></i></a> </div>
+    <div class="time_format"></div>
+    Author and Designer of the webpage: Lenin Khangjrakpam
+    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+  </div>
+
+</body>
+</html>
