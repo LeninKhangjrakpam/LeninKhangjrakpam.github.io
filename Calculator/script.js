@@ -18,7 +18,7 @@ function rgb_fn()   //function to get random number in the range of [0, 255]
 function change()   //function to change the body_background randomly
 {
   let r = rgb_fn(), g = rgb_fn(), b = rgb_fn();
-  angle = (angle + 30) % 361;
+  angle = (angle + 90) % 360;
   document.querySelector('.display-value').innerHTML = 'rgb('+r + ',' + g + ',' +b + ')';
   document.querySelector('body').style.backgroundColor = 'rgb('+r+ ',' +g+ ','+ b + ')';
   document.querySelector('.calct').style.backgroundColor = 'rgb('+r+ ',' +g+ ','+ b + ')';

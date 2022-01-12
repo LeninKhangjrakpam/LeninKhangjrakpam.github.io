@@ -106,6 +106,7 @@ button{
   border: orange;
   border-radius: 30%;
   color: rgb(147, 24, 230);
+  transition: 0.2s;
 }
 a{
   text-decoration: none;
