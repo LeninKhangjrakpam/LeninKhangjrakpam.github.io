@@ -94,6 +94,13 @@ hr  {
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
+.cc-attribute  {
+  text-align: center; 
+  color: white; 
+  font-size: small;
+  font-family: monospace;
+  padding: 15px;
+}
 
 @keyframes flip {
   from  {
