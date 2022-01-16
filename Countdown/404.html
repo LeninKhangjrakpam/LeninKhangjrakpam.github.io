@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404-Not Found</title>
+</head>
+<style>
+  header {
+    font-size: larger;
+  }
+  section, header, footer, img {
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    display: block;
+  }
+  img {
+    height: 70px;
+    margin: auto;
+  }
+  section{
+    font-size: 1.5rem;
+    border: 5px solid rgb(156, 156, 156);
+    border-radius: 15px;
+    width: fit-content;
+    margin: auto;
+    padding: 1rem;
+  }
+  body  {
+    background-color: black;
+    background-image: url("../static/bgbanner1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode:luminosity;
+  }
+  .container  {
+    margin-top: 5%;
+  }
+  .wheel  {
+    background-color: white;
+    border-radius: 50%;
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 3rem;
+    padding: 0.5rem;
+    transition: 2s;
+    animation-name: rotate;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  .wheel a {
+    text-decoration: none;
+  }
+  .wheel:hover  {
+    font-size: 3.5rem;
+  }
+  hr  {
+    width: 80%;
+  }
+  footer  {
+    font-family: monospace;
+    font-size: medium;
+    position: relative;
+    margin-top: 5rem;
+  }
+  
+  @keyframes rotate {
+    from  {
+      background-color: orangered;
+      transform: rotateZ(0deg);
+      border: 2px solid white;
+    }
+    to  {
+      transform: rotateZ(345deg);
+      background-color: purple;
+      border: 2px solid orangered;
+    }
+  }
+</style>
+<body>
+  <div class="container">
+    <img src="../static/logo.png" />
+    <header><h1>404 - NOT FOUND</h1></header>
+    <section>
+      The URL address you are trying to reach might have been removed or had its name changed or is temporarily available.<br>
+      Please check the url address and try again ...
+    </section>
+    <div class="wheel">
+      <a href="index.html">🎮</a>
+    </div>
+    <footer>
+      <hr>
+      Response: 404 - NOT FOUND
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+body  {
+  background-color: black;
+  background-image: url("../static/bgbanner1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.card-containers  {
+  position: relative;
+  top: 100px;
+  padding: 50px;
+  margin: auto;
+  width: fit-content;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.card {
+  background-color: transparent;
+  width: 160px;
+  text-align: center;
+  margin: 5px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 0px black;
+  overflow: hidden;
+  transition: 800ms;
+}
+.card:hover {
+  box-shadow: 0 0 2px 1px black;
+}
+.card-title {
+  font-size: 3.5rem;
+  font-family: monospace;
+  position: relative;
+  transition: 1s;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 4px;
+}
+.card-text  {
+  font-family: sans-serif;
+}
+footer {
+  color: white;
+  font-family: monospace;
+  font-size: medium;
+  font-weight: 300;
+  position: relative;
+  text-align: center;
+}
+a {
+  color: orangered;
+  text-decoration: none;
+  font-weight: bold;
+}
+hr  {
+  width: 80%;
+  margin: auto;
+}
+#second {
+  animation-name: flip;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+.spinner-container  {
+  position: relative;
+  padding: 50px;
+  top: 150px;
+  margin-bottom: 150px;
+}
+.spinner-shadow  {
+  width: fit-content;
+  margin: auto;
+  border-radius: 50%;
+  padding: 7px;
+}
+.spinner  {   
+  border: 15px solid yellow;
+  outline: 10px solid red;
+  outline-style: groove;
+  border-style: groove double dotted double;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  position: relative;
+  animation-name: rotate-sidewise;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flip {
+  from  {
+    transform: rotateX(0deg);
+  } 
+  to  {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes rotate-sidewise {
+  0%  {
+    transform: rotate3d(1, 1, 1, 0deg);
+    border: 15px solid yellow;
+    outline: 10px solid red;
+    outline-style: groove;
+    border-style: groove double dotted double;
+  }
+  50%  {
+    transform: rotate3d(1, 1, 1, 380deg);
+    border: 15px solid red;
+    outline: 10px solid yellow;
+    outline-style: groove;
+    border-style: groove double dotted double;
+  }
+  100%  {
+    transform: rotate3d(1, 1, 1, 0deg);
+    border: 15px solid yellow;
+    outline: 10px solid red;
+    outline-style: groove;
+    border-style: groove double dotted double;
+  }
+}
