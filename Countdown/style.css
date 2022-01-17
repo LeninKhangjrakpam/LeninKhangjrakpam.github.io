@@ -68,11 +68,26 @@ hr  {
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }
+.bin-container  {
+  /* visibility: hidden; */
+  opacity: 0;
+  width: fit-content;
+  margin: auto  ;
+  color: rgb(225, 255, 208);
+  font-size: 1rem;
+  font-family: monospace;
+  font-weight: bold;
+  position: relative;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 1px rgb(179, 255, 232);
+  transition: 500ms;
+}
 .spinner-container  {
   position: relative;
   padding: 50px;
-  top: 150px;
-  margin-bottom: 150px;
+  top: 50px;
+  margin-bottom: 100px;
 }
 .spinner-shadow  {
   width: fit-content;
