@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="script.js" type="text/javascript"></script>
+  <title>Conway Game of Life</title>
+</head>
+<style>
+  body  {
+    background-color: rgb(253, 253, 253);
+    margin: 0;
+  }
+  .h1-container  {
+    position: relative;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    color: rgb(40, 19, 19);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 3px 0px rgb(189, 189, 189);
+    margin-bottom: 10px;
+  }
+  .h1-container button  {
+    color: white;
+    background-color: rgb(34, 130, 255);
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    margin: 5px;
+  }
+  .buttonGroups {
+    background-color: rgba(255, 255, 255, 0.386);
+    position: sticky;
+    top: 0px;
+  }
+  rect  {
+    stroke: darkgreen;
+    transition: 500ms;
+  }
+  rect:hover  {
+    fill: red;
+  }
+  .svgContainer {
+    overflow: auto;
+    height: 90vh;
+    border-radius: 10px;
+  }
+  .controller {
+    border: 1px solid indianred;
+    border-radius: 10px;
+    text-align: center;
+    /* background-color: ; */
+  }
+  .controller button  {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: green;
+    color: aliceblue;
+    font-weight: bold;
+    margin: 1rem;
+  }
+  button:hover  {
+    background-color: red;
+    box-shadow: 0 0 5px 3px lightgray;
+    cursor: pointer;
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="h1-container">
+      <h1>Conway's Game of Life</h1>
+      <div class="buttonGroups">
+        <a href="#"><button>Home</button></a><a href="#"><button>Game of Life</button></a><a href="#"><button>About</button></a>
+      </div>
+    </div>
+    <div class="svgContainer">
+      <svg id="GOL"></svg>
+    </div>
+    <div class="controller">
+      <button id="start">Play</button><button id="stop">Stop</button>
+    </div>
+  </div>
+</body>
+</html>
