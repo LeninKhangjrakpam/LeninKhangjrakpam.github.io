@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const boxHeight = 15, boxWidth = 15;
 
   let state = [];
-  const totalRow = 1000, totalColumn = 1000;
+  const totalRow = 100, totalColumn = 100;
   // Adding boxes
   for (let i = 0; i < totalRow * totalColumn; i++) {
     state = [...state, 0];
